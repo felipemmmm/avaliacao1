@@ -2,10 +2,10 @@ package com.example.avaliacaobiblioteca.Model;
 
 public class Livro {
 
-    int isbn;
-    String nomeLivro;
-    String autor;
-    String genero;
+    private int isbn;
+    private String nomeLivro;
+    private String autor;
+    private String genero;
 
     Livro(){}
     Livro(int isbn, String nomeLivro, String autor, String genero){

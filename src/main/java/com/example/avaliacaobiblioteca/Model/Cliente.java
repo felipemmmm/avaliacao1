@@ -1,11 +1,11 @@
 package com.example.avaliacaobiblioteca.Model;
 
 public class Cliente {
-    Long idCliente;
-    String nomeCliente;
-    int cpf;
-    int telefone;
-    String email;
+    private Long idCliente;
+    private String nomeCliente;
+    private int cpf;
+    private int telefone;
+    private String email;
 
     Cliente(){}
     Cliente(Long idCliente, String nomeCliente, int cpf, int telefone, String email) {
