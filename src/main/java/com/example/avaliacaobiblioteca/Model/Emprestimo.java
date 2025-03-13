@@ -5,13 +5,13 @@ import java.util.ArrayList;
 public class Emprestimo {
 
     private Long idEmprest;
-    private int dataStart;
-    private int dataEnd;
+    private String  dataStart;
+    private String dataEnd;
     private ArrayList<String> livrosEmprest = new ArrayList<String>();
     private String clienteEmprest;
 
     Emprestimo(){}
-    Emprestimo(int dataStart, int dataEnd, ArrayList<String> livrosEmprest, String clienteEmprest, Long idEmprest) {
+    Emprestimo(String dataStart, String dataEnd, ArrayList<String> livrosEmprest, String clienteEmprest, Long idEmprest) {
         this.dataStart = dataStart;
         this.dataEnd = dataEnd;
         this.livrosEmprest = livrosEmprest;
@@ -27,19 +27,19 @@ public class Emprestimo {
         this.idEmprest = idEmprest;
     }
 
-    public int getDataStart() {
+    public String getDataStart() {
         return dataStart;
     }
 
-    public void setDataStart(int dataStart) {
+    public void setDataStart(String dataStart) {
         this.dataStart = dataStart;
     }
 
-    public int getDataEnd() {
+    public String getDataEnd() {
         return dataEnd;
     }
 
-    public void setDataEnd(int dataEnd) {
+    public void setDataEnd(String dataEnd) {
         this.dataEnd = dataEnd;
     }
 

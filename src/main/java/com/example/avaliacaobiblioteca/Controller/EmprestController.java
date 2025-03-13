@@ -1,6 +1,7 @@
 package com.example.avaliacaobiblioteca.Controller;
 
 import com.example.avaliacaobiblioteca.Banco.EmprestBD;
+import com.example.avaliacaobiblioteca.Model.Cliente;
 import com.example.avaliacaobiblioteca.Model.Emprestimo;
 
 import java.util.List;
@@ -33,4 +34,26 @@ public class EmprestController {
         }
         return null;
     }
+
+    // 5. Remove um empréstimo
+    public boolean delete(Long idEmprest) {
+        return bancoD.delete(idEmprest);
+    }
+
+    // 6. Buscar por data final de empréstimos
+    public Emprestimo getByEnd(String dataEnd) {
+        return bancoD.getByEnd(dataEnd);
+    }
+
+    // 7. Atualiza dados de um cliente
+    public Cliente updateCliente(Long idCliente, Cliente cliente) {
+        boolean result = bancoD.updateCliente(idCliente, cliente);
+
+        if(result) {
+            return cliente;
+        }
+
+        return null;
+    }
+
 }
